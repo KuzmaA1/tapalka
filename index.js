@@ -2,7 +2,10 @@
 const http = require('http');
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
+
 const server = http.createServer((req,res)=>{
+        console.log(req);
         if (req.method === 'POST') {
             let data = '';
             req.on('data', chunk => {
@@ -15,7 +18,7 @@ const server = http.createServer((req,res)=>{
           } else {
             res.end('Send a POST request to this endpoint');
           }
-}).listen(3000,(err)=>{
+}).listen(port,(err)=>{
         if(err)throw err;
         console.log('amit gamyak');
 });
