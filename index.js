@@ -1,14 +1,8 @@
 //var mysql = require('mysql');
-const https = require('https');
+const http = require('http');
 const fs = require('fs');
 
-var options = {
-    host: 'https://tapalka.onrender.com',
-    port: '3000',
-    path: ''
-}
-
-https.createServer(options,(req,res)=>{
+http.createServer((req,res)=>{
         res.end("1");
 }).listen((err)=>{
     if(err)throw err;
