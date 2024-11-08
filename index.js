@@ -3,9 +3,8 @@ const https = require('https');
 const fs = require('fs');
 
 var options = {
-    host: 'tapalka.onrender.com',
-    port: 3000,
-    path: '/'
+    host: 'tapalka.onrender.com:3000',
+    path: ''
 }
 
 https.createServer(options,(req,res)=>{
