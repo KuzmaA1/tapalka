@@ -2,10 +2,10 @@
 const http = require('http');
 const fs = require('fs');
 
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 const server = http.createServer((req,res)=>{
-        console.log(1);
+        console.log(req.method);
         if (req.method === 'POST') {
             let data = '';
             req.on('data', chunk => {
