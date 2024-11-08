@@ -3,7 +3,7 @@ const http = require('http');
 const fs = require('fs');
 
 const server = http.createServer((req,res)=>{
-    Console.log(req);
+        console.log(req);
         if (req.method === 'POST') {
             let data = '';
             req.on('data', chunk => {
