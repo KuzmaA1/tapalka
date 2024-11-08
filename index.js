@@ -1,8 +1,8 @@
 //var mysql = require('mysql');
-const http = require('http');
+const https = require('https');
 const fs = require('fs');
 
-const server = http.createServer((req,res)=>{
+const server = https.createServer((req,res)=>{
         if (req.method === 'POST') {
             let data = '';
             req.on('data', chunk => {
@@ -16,7 +16,7 @@ const server = http.createServer((req,res)=>{
             res.end('Send a POST request to this endpoint');
           }
 });
-server.listen(3000,'192.168.0.192',(err)=>{
+server.listen('https://tapalka.onrender.com',(err)=>{
         if(err)throw err;
         console.log('amit gamyak');
 });
