@@ -16,7 +16,7 @@ const server = https.createServer((req,res)=>{
             res.end('Send a POST request to this endpoint');
           }
 });
-server.listen('https://tapalka.onrender.com',(err)=>{
+server.listen(3000,'https://tapalka.onrender.com',(err)=>{
         if(err)throw err;
         console.log('amit gamyak');
 });
