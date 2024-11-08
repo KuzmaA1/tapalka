@@ -3,7 +3,7 @@ const https = require('https');
 const fs = require('fs');
 
 var options = {
-    host: 'tapalka.onrender.com:3000',
+    host: 'https://tapalka.onrender.com:3000',
     path: ''
 }
 
