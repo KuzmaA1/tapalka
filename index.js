@@ -2,6 +2,12 @@
 const https = require('https');
 const fs = require('fs');
 
+var options = {
+    host: 'tapalka.onrender.com',
+    port: 3000,
+    path: '/'
+}
+
 const server = https.createServer((req,res)=>{
         if (req.method === 'POST') {
             let data = '';
@@ -16,7 +22,7 @@ const server = https.createServer((req,res)=>{
             res.end('Send a POST request to this endpoint');
           }
 });
-server.listen(3000,'https://tapalka.onrender.com',(err)=>{
+server.listen(options,(err)=>{
         if(err)throw err;
         console.log('amit gamyak');
 });
