@@ -10,7 +10,7 @@ var options = {
 
 https.createServer(options,(req,res)=>{
         res.end("1");
-}).listen(3000,(err)=>{
+}).listen((err)=>{
     if(err)throw err;
     console.log('amit gamyak');
 });
