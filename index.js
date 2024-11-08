@@ -4,7 +4,7 @@ const fs = require('fs');
 
 http.createServer((req,res)=>{
         res.end("1");
-}).listen((err)=>{
+}).listen(3000,(err)=>{
     if(err)throw err;
     console.log('amit gamyak');
 });
