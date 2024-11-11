@@ -1,4 +1,4 @@
-var mysql = require('mysql2');
+var mysql = require('mysql');
 const http = require('http');
 const fs = require('fs');
 
